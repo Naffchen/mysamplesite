@@ -1,0 +1,118 @@
+
+#loading {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-center {
+  text-align: center;
+}
+
+.loading-logo {
+  margin: 0 auto;
+  width: 40px;
+  height: auto;
+  position: relative;
+  top: 5px;
+  -webkit-animation: blink 1.7s ease-in-out infinite alternate;
+  animation: blink 1.7s ease-in-out infinite alternate;
+  
+ }
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader {
+  font-size: 32px;
+  padding-left: 1rem;
+  color: $base-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.first-dot {
+  font-size: 32px;
+  color: #5b5a3c;
+  display: inline-block;
+  animation: load-1 1.5s ease-in-out infinite alternate;
+}
+
+.second-dot {
+  font-size: 32px;
+  color: #5b5a3c;
+  display: inline-block;
+  animation: load-1 1.7s ease-in-out infinite alternate;
+}
+
+.third-dot {
+  font-size: 32px;
+  color: #5b5a3c;
+  display: inline-block;
+  animation: load-1 1.9s ease-in-out infinite alternate;
+}
+@keyframes load-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -1,0 +1,19 @@
+$xl: 1200px;  //PC 
+$md: 768px; // タブレットくらい以降
+$sm: 576px;  // 576px以降
+
+ @mixin xl {
+   @media (min-width: ($xl)) {
+     @content;
+   }
+ }
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
+}
